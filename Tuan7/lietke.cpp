@@ -9,7 +9,7 @@ void generateStrings(const vector<char>& characters, int length, string currentS
         cout << currentString << endl;
         return;
     }
-
+ 
     for (char c : characters) {
         string newString = currentString + c;
         generateStrings(characters, length - 1, newString);
